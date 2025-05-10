@@ -8,7 +8,7 @@ import cookieParser from 'cookie-parser';
 const app: Application = express();
 //using parser
 app.use(express.json());
-app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
+app.use(cors({ origin: 'https://bicycle-store-by-antor-karmokar.vercel.app', credentials: true }));
 app.use(cookieParser()); 
 // hit the application route
 app.use('/api', router);

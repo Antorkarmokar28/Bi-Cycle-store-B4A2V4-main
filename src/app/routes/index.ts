@@ -3,6 +3,7 @@ import { userRouter } from '../modules/user/user.routes';
 import { bicycleRoute } from '../modules/bicycle/bicycle.route';
 import { bicyclOrderRouter } from '../modules/Order-bicycle/order-bicycle.route';
 import { authRoutes } from '../modules/auth/auth.route';
+import { subscribeRouter } from '../modules/subscribe/subscribe.route';
 
 const router = Router();
 const moduleRoutes = [
@@ -21,6 +22,10 @@ const moduleRoutes = [
   {
     path: '/auth',
     route: authRoutes,
+  },
+  {
+    path: '/subscribe',
+    route: subscribeRouter,
   },
 ];
 
